@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/memo
+
+idspace: MEMO
+base_url: /obo/memo
+
+products:
+- memo.owl: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/memo/main/memo.owl
+- memo.obo: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/memo/main/memo.obo
+
+term_browser: ontobee
+example_terms:
+- MEMO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/memo/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ISE-FIZKarlsruhe/memo/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MEMO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/memo/main/
+
