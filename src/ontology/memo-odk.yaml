@@ -1,102 +1,57 @@
-allow_equivalents: asserted-only
-babelon_translation_group: null
-catalog_file: catalog-v001.xml
-ci:
-- github_actions
-components: null
-contact: null
-contributors: null
-create_obo_metadata: true
-creators: null
-custom_makefile_header: '
-
-  # ----------------------------------------
-
-  # More information: https://github.com/INCATools/ontology-development-kit/
-
-  '
-description: None
-documentation: null
-dosdp_tools_options: --obo-prefixes=true
-edit_format: owl
-ensure_valid_rdfxml: true
-exclude_tautologies: structural
-export_formats:
-- owl
-- obo
-export_project_yaml: false
-extra_rdfxml_checks: false
-git_main_branch: main
-git_user: ''
-github_org: ISE-FIZKarlsruhe
-gzip_main: false
 id: memo
-import_component_format: ofn
-import_group: null
-import_pattern_ontology: false
-license: https://creativecommons.org/licenses/unspecified
-namespaces: null
-obo_format_options: ''
-owltools_memory: ''
-pattern_pipelines_group: null
-primary_release: full
-public_release: none
-public_release_assets: null
-reasoner: ELK
-release_annotate_inferred_axioms: false
-release_artefacts:
-- full
-- base
-release_date: false
-release_diff: false
-release_materialize_object_properties: null
-release_use_reasoner: true
-remove_owl_nothing: false
+title: "NFDI4Memory Ontology (MemO)"
+github_org: ISE-FIZKarlsruhe
 repo: memo
-robot_java_args: ''
-robot_plugins: null
+uribase: https://nfdi.fiz-karlsruhe.de/4memory/ontology/
+description: >
+  The MemO ontology models the research data of the NFDI4Memory community and builds upon the NFDIcore and NFDI4Culture ontologies.
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+import_group:
+  products:
+    #- id: nfdicore
+      #mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl
+      #module_type: mirror
+      #module_type: slme
+      #module_type_slme: BOT
+
+    #- id: schema
+     # mirror_from:  "https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl"
+      #module_type: custom
+    #  module_type: slme
+    #  module_type_slme: SUBSET
+    #  slme_individuals: exclude
+
+    #- id: skos
+     # mirror_from:  "http://www.w3.org/TR/skos-reference/skos.rdf"
+    #  module_type: custom
+    #  module_type: slme
+    #  module_type_slme: SUBSET
+    #  slme_individuals: exclude
+
+    
+
+release_artefacts:
+  - base
+  - full
+#  - simple
+
+export_formats:
+  - owl
+  - ttl
+
+
+robot_java_args: '-Xmx4G'
+documentation:
+  documentation_system: mkdocs
+remove_owl_nothing: TRUE
+robot_java_args: "-Xmx8G"
 robot_report:
-  custom_profile: false
-  custom_sparql_checks:
-  - owldef-self-reference
-  - iri-range
-  - label-with-iri
-  - multiple-replaced_by
-  - dc-properties
-  custom_sparql_exports:
-  - basic-report
-  - class-count-by-prefix
-  - edges
-  - xrefs
-  - obsoletes
-  - synonyms
-  ensure_owl2dl_profile: true
-  fail_on: null
-  release_reports: false
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
   report_on:
-  - edit
-  sparql_test_on:
-  - edit
-  use_base_iris: true
-  use_labels: true
-robot_settings: null
-robot_version: null
-run_as_root: false
-sssom_mappingset_group: null
-subset_group: null
-title: NFDI4Memory Ontology
-travis_emails: null
-uribase: http://purl.obolibrary.org/obo
-uribase_suffix: null
-use_context: false
-use_custom_import_module: false
-use_dosdps: false
-use_edit_file_imports: true
-use_env_file_docker: false
-use_external_date: false
-use_mappings: false
-use_templates: false
-use_translations: false
-workflows:
-- docs
-- qc
+    - edit
+
+#ci:
+#  - github_actions
