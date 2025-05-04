@@ -16,7 +16,7 @@ Ontology: <http://purl.obolibrary.org/obo/memo/memo-idranges.owl>
 
 Annotations: 
     idsfor: "MEMO",
-    idprefix: "http://purl.obolibrary.org/obo/MEMO_",
+    idprefix: "https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:

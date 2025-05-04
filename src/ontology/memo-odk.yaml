@@ -2,16 +2,16 @@ id: memo
 title: "NFDI4Memory Ontology (MemO)"
 github_org: ISE-FIZKarlsruhe
 repo: memo
-uribase: https://nfdi.fiz-karlsruhe.de/4memory/ontology/
+uribase: https://nfdi.fiz-karlsruhe.de/4memory/ontology
 description: >
   The MemO ontology models the research data of the NFDI4Memory community and builds upon the NFDIcore and NFDI4Culture ontologies.
 license: https://creativecommons.org/publicdomain/zero/1.0/
 
 import_group:
   products:
-    #- id: nfdicore
-      #mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/main/nfdicore.ttl
-      #module_type: mirror
+    - id: cto
+      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi4culture/refs/heads/main/cto.owl
+      module_type: mirror
       #module_type: slme
       #module_type_slme: BOT
 

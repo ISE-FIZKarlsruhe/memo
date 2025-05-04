@@ -2,10 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
 
-  
-  
-  
-
+<uri name="https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/cto_import.owl" uri="imports/cto_import.owl"/> 
 
   
 

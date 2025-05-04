@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                5f7d7ee712430f65efb1c02c61c4408d4955cf62bd7941e9d5d27a3c626aaa44
+CONFIG_HASH=                6c54cd434ef533e1f36970baa3de6a967c6a1aa6e5bc3c9ff91704499e34b892
 
 
 # ----------------------------------------
@@ -19,9 +19,9 @@ CONFIG_HASH=                5f7d7ee712430f65efb1c02c61c4408d4955cf62bd7941e9d5d2
 # these can be overwritten on the command line
 
 OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    https://nfdi.fiz-karlsruhe.de/4memory/ontology/
+URIBASE=                    https://nfdi.fiz-karlsruhe.de/4memory/ontology
 ONT=                        memo
-ONTBASE=                    https://nfdi.fiz-karlsruhe.de/4memory/ontology//memo
+ONTBASE=                    https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS = 
+IMPORTS =  cto
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -369,6 +369,12 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: cto
+
+$(IMPORTDIR)/cto_import.owl: $(MIRRORDIR)/cto.owl $(IMPORTDIR)/cto_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
+    $(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -399,6 +405,13 @@ MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
+
+
+## ONTOLOGY: cto
+.PHONY: mirror-cto
+.PRECIOUS: $(MIRRORDIR)/cto.owl
+mirror-cto: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi4culture/refs/heads/main/cto.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
