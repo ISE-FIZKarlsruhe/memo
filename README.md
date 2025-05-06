@@ -1,28 +1,26 @@
 
 ![Build Status](https://github.com/ISE-FIZKarlsruhe/memo/actions/workflows/qc.yml/badge.svg)
-# NFDI4Memory Ontology
+# NFDI4Memory Ontology (MemO)
 
-Description: None
+This repository provides the NFDI4Memory Ontology (MemO) and its documentation. MemO is a domain-specific ontology module developed within the Task Area 3 of the NFDI4Memory initiative. The ontology builds upon the NFDIcore mid-level ontology v3, the NFDI4Culture Ontology v3 and is aligned with the Basic Formal Ontology (BFO) 2020 to ensure semantic interoperability and ontological rigor.
 
-More information can be found at http://obofoundry.org/ontology/memo
+![NFDI4Memory Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NFDI4Memory.svg/330px-Logo_NFDI4Memory.svg.png)
 
 ## Versions
 
 ### Stable release versions
 
-The latest version of the ontology can always be found at:
+The latest version of the ontology can be found at:
+[https://nfdi.fiz-karlsruhe.de/4memory/ontology/](https://nfdi.fiz-karlsruhe.de/4memory/ontology/)
 
-http://purl.obolibrary.org/obo/memo.owl
+### Knowledge Graph
+The NFDI4Memory Knowledge Graph is currently being developed and documented here: [https://nfdi.fiz-karlsruhe.de/4memory/](https://nfdi.fiz-karlsruhe.de/4memory/) 
 
-(note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
 Editors of this ontology should use the edit version, [src/ontology/memo-edit.owl](src/ontology/memo-edit.owl)
 
-## Contact
-
-Please use this GitHub repository's [Issue tracker](https://github.com/ISE-FIZKarlsruhe/memo/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
