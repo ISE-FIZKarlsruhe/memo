@@ -39,3 +39,9 @@ nav:
           - Your ODK Repository Overview: odk-workflows/RepositoryFileStructure.md 
       - Contributing: contributing.md
 
+
+
+
+plugins:
+  - search
+  - d2
