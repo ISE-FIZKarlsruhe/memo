@@ -1,0 +1,182 @@
+#	LABEL	TYPE	URL	EXTERNAL ID	ROLES	PROCESS PARTICIPATION			EXTERNAL CLASSIFIER	LOCATION	CONSORTIUM MEMBER	HAS CONTRIBUTOR	CONTRIBUTOR OF	CONTACT POINT	MEMBER / PART OF	DOMAIN, FIELD OF RESEARCH	PURPOSE	OBJECT TYPE	MEDIA TYPE	LICENSE	TECHNOLOGIES	STANDARD	RELATED PROJECT
+ID	LABEL	TYPE	I nfdicore:has url	I nfdicore:has external identifier SPLIT=,	I ro:has role SPLIT=,	I bfo:participates in SPLIT=,	I bfo:realizes SPLIT=,	I ro:has output SPLIT=,	I nfdicore:has external classifier	I nfdicore:has location	I ro:has member	I nfdicore:has contributor SPLIT=,	I nfdicore:contributor of SPLIT=,	I nfdicore:has contact point SPLIT=,	I bfo:part of SPLIT=,	I nfdicore:has subject area SPLIT=,	I iao:has specification SPLIT=,	I 'provides content type'	I nfdicore:has media type	I nfdicore:has license	I nfdicore:has technology SPLIT=,	I nfdicore:has standard	I nfdicore:resource of project
+																							
+M100000	NFDI4Memory	nfdicore:organization																					
+																							
+M100100	GND Explorer	nfdicore:service	https://explore.gnd.network/									M100101				M100300, M100305,		M100380, M100381	M100394, M100395	M100438	M102001, M102003, M102011, M102007, M102023	M100356	
+M100101	Deutsche Nationalbibliothek	nfdicore:consortium partner		01n7gem85, 					M100315	M100104, M100105, M100106, M100107, M100108			M100100										
+M100102	Hubrich, Jessica	nfdicore:person		1106271661,	M200100,																		
+M100103	Organizer role for the GND explorer	nfdicore:organizer role																					
+M100104	Frankfurt	nfdicore:city																					
+M100105	Leipzig	nfdicore:city																					
+M100106	Deutschland	nfdicore:country																					
+M100107	Hessen	nfdicore:federal state																					
+M100108	Sachsen	nfdicore:federal state																					
+M100109	GND Reconciliation Service	nfdicore:service	https://reconcile.gnd.network											M100110, M100111, M100112					M100393	M100438	M100328		
+M100110	Adrian Pohl	nfdicore:person		orcid0000-0001-9083-7442											M100112								
+M100111	Fabian Steeg	nfdicore:person		orcid0000-0001-8829-1989											M100112								
+M100112	hbz – Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen	nfdicore:consortium partner		 00n3mcd10																			
+M100113	Köln	nfdicore:city																					
+M100114	Nordrhein-Westfalen	nfdicore:federal state																					
+M100115	xTree Vokabularverwaltung für 200+ Vokabulare/Teilvokabulare	nfdicore:service	https://xtree-public.digicult-verbund.de/									M100118		M100116			M100421, M100427, M100428, M100436	M100381	M100393, M100409, M100410, M100416	M100439, M100442	M100393, M100409	M100351, M100368	
+M100116	Axel Vitzthum	nfdicore:person													M100118								
+M100117	Dr. Johannes Bracht	nfdicore:person		orcid0000-0001-5257-3255											M100118								
+M100118	digiCULT-Verbund eG	nfdicore:consortium partner	https://www.digicult-verbund.de							M100119													
+M100119	Kiel	nfdicore:city																					
+M100120	Oral-History.Digital. Interviewportal - Erschließungsplattform - Forschungsumgebung	nfdicore:data portal	https://portal.oral-history.digital/de		M100130							M100121, M100122		M100123, M100124		M100300	M100421, M100422, M100423, M100424, M100427, M100428, M100429, M100431, M100432, M100433, M100436	M100380, M100385, M100386, M100388, M100389	M100392, M100393, M100404, M100405, M100406		M100318, M100320, M100331	M100356, M100365, M100366	
+M100121	Herdis Kley	nfdicore:person																					
+M100122	Peter Kompiel	nfdicore:person																					
+M100123	Dr. Cord Pagenstecher	nfdicore:person		orcid0000-0002-2412-5348																			
+M100124	Dr. Almut Leh	nfdicore:person																					
+M100125	 Freie Universität Berlin	nfdicore:consortium member	https://www.fu-berlin.de		M100131	M100132			M100311	M100128, M100129													
+M100126	Freie Universität Berlin, Universitätsbibliothek, Team "Digitale Interview-Sammlungen"	nfdicore:consortium partner	https://www.fu-berlin.de/dis						M100315	M100128, M100129													
+M100127	FernUniversität in Hagen Institut für Geschichte und Biographie	nfdicore:consortium partner	https://www.fernuni-hagen.de/geschichteundbiographie/						M100313														
+M100128	Berlin	nfdicore:city																					
+M100129	Berlin	nfdicore:federal state																					
+M100130	Service product role of Oral-History.Digital	nfdicore:service product role																					
+M100131	Service provider role of FU Berlin	nfdicore:service provider role																					
+M100132	Process of providing Oral-History.Digital	nfdicore:service process					M100131	M100120															
+M100133	Offene Wissensbasis zur mittelalterlichen Kirchen- und Verfassungsgeschichte	nfdicore:data portal	https://www.mephisto.uni-jena.de/projekte/core-h						M100313			M100138		M100134		M100300		M100391		M100439	M100142, M100143, M100144		M100139
+M100134	Clemens Beck	nfdicore:person			M100137										M100138								
+M100135	Prof. Dr. Clemens Beckstein	nfdicore:person													M100138								
+M100136	PD Dr. Robert Gramsch-Stehfest	nfdicore:person													M100138								
+M100137	Contact point role for MEPHisto	nfdicore:contact point role																					
+M100138	Institut für Informatik der FSU Jena	nfdicore:consortium partner	https://www.ki.uni-jena.de/							M100140, M100141			M100133										
+M100139	CORE-H	nfdicore:project	https://www.mephisto.uni-jena.de/projekte/core-h																				
+M100140	Jena	nfdicore:city																					
+M100141	Thüringen	nfdicore:federal state																					
+M100142	Apache Jena	nfdicore:technology		wikidata:Q1686799																			
+M100143	Prolog	nfdicore:technology		gnd:4047464-1																			
+M100144	FLogic	nfdicore:technology																					
+M100145	Ontologie für die mittelalterliche und frühneuzeitliche Geschichte 	nfdicore:ontology	https://www.mephisto.uni-jena.de/projekte/core-h									M100138		M100134		M100300			M100409, M100410	M100439		M100146	M100139
+M100146	Web Ontology Language (OWL)	nfdicore:standard		wikidata:Q826165																			
+M100147	Digitalisate Repository	nfdicore:data portal										M100150		M100148, M100149		M100300	M100421, M100428, M100432, M100436	M100380, M100385, M100386	M100396, M100398, M100402		M100318, M100156	M100154, M100155	
+M100148	Nils Reichert	nfdicore:person													M100150								
+M100149	Andrea Langner	nfdicore:person													M100150								
+M100150	Hessisches Landesarchiv 	nfdicore:consortium partner	https://landesarchiv.hessen.de/							M100151, M100152, M100153													
+M100151	Marburg	nfdicore:city																					
+M100152	Wiesbaden	nfdicore:city																					
+M100153	Darmstadt	nfdicore:city																					
+M100154	Preservation Metadata: Implementation Strategies (PREMIS)	nfdicore:standard		wikidata:Q2108820																			
+M100155	Open Archival Information System (OAIS)	nfdicore:standard		wikidata:Q1469973																			
+M100156	International Image Interoperability Framework (IIIF)	nfdicore:standard		wikidata:Q22682088																			
+M100157	LAUDATIO – Long-term Access and Usage of Deeply Annotated Information	nfdicore:data portal	https://www.laudatio-repository.org									M100158				M100300, M100305		M100382, M100385	M100392	M100439	M100322, M100323, M100325, M100327, M100334, M100335	M100364	M100161
+M100158	Rolf Guescini	nfdicore:person		orcid:0000-0003-4325-5751																			
+M100159	Humboldt-Universität zu Berlin, Computer- und Medienservice	nfdicore:consortium partner	https://www.cms.hu-berlin.de							M100128, M100129					M100159								
+M100160	Humboldt-Universität zu Berlin	nfdicore:consortium member		ror:01hcx6992						M100128, M100129													
+M100161	LAUDATIO II	nfdicore:project	https://gepris.dfg.de/gepris/projekt/189321318																				
+M100162	Portal der European Holocaust Research Infrastructure (EHRI)	nfdicore:data portal	https://portal.ehri-project.eu									M100164		M100163		M100300	M100428		M100393, M100394, M100395		M100318, M100319	M100347, M100348, M100349, M100350, M100351	M100165
+M100163	Johannes Meerwald	nfdicore:person													M100164								
+M100164	Institut für Zeitgeschichte 	nfdicore:consortium partner	https://www.ifz-muenchen.de/						M100307														
+M100165	EHRI - European Holocaust Research Infrastructure	nfdicore:project	https://www.ehri-project.eu/																				
+M100166	Archivportal-D	nfdicore:data portal	www.archivportal-d.de													M100300	M100424, M100427, M100428, M100432		M100392	M100438	M100318, M100328, M100178	M100364, M100348, M100356, M100174, M100175	
+M100167	Archival resource	memo:provided content type		wikidata:Q106815942, gnd:4142968-0																			
+M100168	Gerald Maier	nfdicore:person		orcid0000-0001-9220-3013											M100171								
+M100169	Andreas Neuburger	nfdicore:person		orcid0000-0003-4867-6926											M100171								
+M100170	Daniel Fähle	nfdicore:person		orcid0000-0002-2532-7873						M100172, M100173					M100171								
+M100171	Landesarchiv Baden Württemberg	nfdicore:consortium member	https://www.landesarchiv-bw.de/	02rrh0b30					M100312														
+M100172	Stuttgart	nfdicore:city																					
+M100173	Baden-Württemberg	nfdicore:federal state																					
+M100174	Metadata Encoding and Transmission Standard (METS)	nfdicore:standard		wikidata:Q1640667																			
+M100175	Metadata Object Description Schema (MODS)	nfdicore:standard		wikidata:Q751808																			
+M100176	Deutsche Digitale Biblothek (DDB)	nfdicore:data portal	https://www.deutsche-digitale-bibliothek.de/															M100380, M100385, M100386					
+M100177	Deutsches Zeitungsportal	nfdicore:data portal	https://www.deutsche-digitale-bibliothek.de/newspaper													M100300		M100380, M100385, M100386	M100392, M100396, M100397, M100398, M100403		M100318, M100328, M100178	M100364, M100174, M100175, M100361	
+M100178	Grails	nfdicore:technology		wikidata:Q848544																			
+M100179	LRZ FAIR Data Portal	nfdicore:data portal	https://rdm.lab.lrz.de/									M100182					M100436	M100390			M100323, M100327, M100318	M100408	M100183                             
+M100180	Dr. Stephan Hachinger	nfdicore:person		orcid:0000-0001-8341-1478											M100182								
+M100181	Johannes Munke	nfdicore:person		orcid:0000-0002-5031-9170											M100182								
+M100182	Leibniz-Rechenzentrum (LRZ) der Bayerischen Akademie der Wissenschaften	nfdicore:consortium partner	https://www.lrz.de/	05558nw16						M100184, M100185													
+M100183	LRZ FAIR Data Portal Projekt	nfdicore:project																					
+M100184	Garching	nfdicore:city																					
+M100185	Bayern	nfdicore:federal state																					
+M100186	OCR-D	nfdicore:service	https://ocr-d.de/									M100189				M100300			M100392	M100440	M100323	M100187, M100174	
+M100187	Analyzed Layout and Text Object (ALTO)	nfdicore:standard		wikidata:Q2819247										M100188									
+M100188	Clemens Neudecker	nfdicore:person													M100189								
+M100189	Staatsbibliothek zu Berlin - Preußischer Kulturbesitz	nfdicore:consortium partner	https://staatsbibliothek-berlin.de/	02ysgg478					M100315	M100128, M100129													
+M100190	Kalliope	nfdicore:data portal	https//kalliope-verbund.info									M100189		M100191		M100300			M100392	M100439		M100187, M100174, M100364, M100356, M100175	
+M100191	Gerhard Müller	nfdicore:person													M100189								
+M100192	Handschriftenportal	nfdicore:data portal	https://handschriftenportal.de											M100193		M100300		M100380, M100382, M100385, M100386	M100392, M100411	M100439	M100318, M100327	M100364, M100356, M100156	M100195
+M100193	Robert Giel	nfdicore:person													M100189								
+M100194	CrossAsia - FID Asien	nfdicore:data portal	https://blog.crossasia.org/about/fid-asien/?lang=en									M100189		M100193			M100424, M100428, M100431, M100432, M100436		M100392	M100439	M100409, M100410, M100327, M100328, M100335, M100356	M100364, M100356	M100195
+M100195	Handschriftenportal Projekt	nfdicore:project	https://handschriftenportal.de/									M100189											
+M100196	Virtuelles Kartenforum	nfdicore:data portal	https://kartenforum.slub-dresden.de									M100198		M100197		M100300	M100426. M100427, M100428, M100432, M100436	M100383, M100384, 	M100396, M100397, M100398, M100399, M100400	M100438, M100439	M100320, M100321, M100322, M100323, M100324, M100325, M100326, M100327	M100352, M100353, M100352 M100354	
+M100197	Dominik Stoltz	nfdicore:person		orcid:0009-0001-4168-0730											M100198								
+M100198	Sächsische Landesbibliothek - Staats- und Universitätsbibliothek	nfdicore:consortium partner	https://www.slub-dresden.de	03wf51b65					M100315	M100199, M100108													
+M100199	Dresden	nfdicore:city																					
+M100200	FactGrid	nfdicore:service	https://database.factgrid.de/	wikidata:Q90405608, doi:10.17616/R31NJMQR						M100206, M100141				M100201			M100420, M100421, M100422, M100423, M100424, M100427, M100428, M100429, M100431, M100432, M100433, M100436	M100380, M100391,	M100394, M100395	M100439		M100356	
+M100201	Olaf Simons	nfdicore:person		orcid:0000-0001-9230-4666																			
+M100202	Wirtschafts- und Sozialgeschichte Historisches Datenzentrum Sachsen-Anhalt	nfdicore:organization	https://www.geschichte.uni-halle.de/struktur/hist-data/						M100307						M100201								
+M100203	Martin-Luther-Universität Halle-Wittenberg	nfdicore:consortium partner	https://www.uni-halle.de/	05gqaka33					M100311	M100204, M100205					M100202, M100201								
+M100204	Halle	nfdicore:city																					
+M100205	Sachsen-Anhalt	nfdicore:federal state																					
+M100206	Erfurt	nfdicore:city																					
+M100207	Virtuelles Datenrepositorium ViDa	nfdicore:software	https://vida.uni-trier.de/									M100213		M100209			M100429, M100433				M100325, M100327, M100337, M100338, M100339, M100340	M100356, M100357, M100358, M100359, M100360, M100361, M100362, M100363	
+M100208	Forschungsdatenrepositorium Trier (FRET)		https://fret.uni-trier.de									M100213		M100209			M100429, M100433				M100325, M100327, M100337, M100338, M100339, M100340	M100356, M100357, M100358, M100359, M100360, M100361, M100362, M100363	
+M100209	Marina Lemaire	nfdicore:person		orcid:0000-0003-4726-2481											M100213								
+M100210	Jan Ludwig	nfdicore:person													M100213								
+M100211	Julia Gebhardt	nfdicore:person													M100213								
+M100212	Peter Albertz	nfdicore:person													M100213								
+M100213	Universität Trier	nfdicore:consortium member	https://uni-trier.de	02778hg05					M100311	M100214, M100215													
+M100214	Trier	nfdicore:city																					
+M100215	Rheinland-Pfalz	nfdicore:federal state																					
+M100216	FuD. Virtuelle Forschungsumgebung für die Geistes- und Sozialwissenschaften	nfdicore:software	https://fud.uni-trier.de									M100213				M100305	M100419, M100421, M100436	M100385, M100380, M100382	M100403, M100392, M100322, M100331, M100337, M100402, M100417, M100418		M100322, M100331, M100337, M100220	M100364	
+M100217	Yvonne Rommelfanger	nfdicore:person		orcid:0009-0004-2323-4122																			
+M100218	Ansgar Schmitz	nfdicore:person																					
+M100219	Stefan Kellendonk	nfdicore:person		orcid:0000-0003-1009-3311																			
+M100220	LaTeX	nfdicore:technology		wikidata:Q5310																			
+M100221	eAQUA 	nfdicore:data portal	http://www.eaqua.net/									M100213		M100222		M100300	M100419	M100385	M100392, M100393, M100394, M100395, M100397, M100401		M100328, M100329, M100330, M100331, M100332, M100333, M100334, M100335, M100336	M100355, M100356	
+M100222	Charlotte Schubert	nfdicore:person		orcid:0000-0002-3132-8231																			
+M100223	Datendrehscheibe für Normdaten und Terminologien (DANTE) 	nfdicore:service	https://dante.gbv.de, https://api.dante.gbv.de									M100229		M100227, M100228		M100300		M100381	M100393, M100224, M100225, M100226	M100439	M100232, M100233		
+M100224	JSKOS	nfdicore:media type																					
+M100225	Turtle	nfdicore:media type		wikidata:Q114409																			
+M100226	N-triples	nfdicore:media type		wikidata:Q44044																			
+M100227	Frank Dührkohp	nfdicore:person		orcid:0000-0001-9895-8986											M100229								
+M100228	Gerald Steilen 	nfdicore:person		orcid:0000-0002-9407-4208											M100229								
+M100229	Verbundzentrale des GBV (VZG) 	nfdicore:consortium partner	https://www.gbv.de/informationen/Verbundzentrale	048vdhs48					M100315	M100230, M100231													
+M100230	Göttingen	nfdicore:city																					
+M100231	Niedersachsen	nfdicore:federal state																					
+M100232	JSON-API	nfdicore:technology		wikidata:Q28758133																			
+M100233	easydb	nfdicore:technology		wikidata:Q1278375																			
+M100234	Kartenspeicher	nfdicore:data portal	https://kartenspeicher.gbv.de/									M100229				M100300	M100421, M100424, M100425, M100426, M100427, M100428, M100431, M100432, M100436	M100380, M100383, M100384, M100386	M100396, M100397, M100398	M100439	M100328, M100324, M100334, M100327, M100318	M100356, M100347	
+M100236	iRODS	nfdicore:service	https://irods-web.zdv.uni-mainz.de									M100237					M100429, M100433, M100436				M100328, M100323, M100239, M100240		
+M100237	Johannes Gutenberg-Universität Mainz	nfdicore:consortium partner	https://www.uni-mainz.de/							M100215, M100238													
+M100238	Mainz	nfdicore:city																					
+M100239	C++	nfdicore:technology		wikidata:Q2407																			
+M100240	IBM General Parallel File System	nfdicore:technology		wikidata:Q2389927																			
+M100241																							
+M100242																							
+M100243																							
+M100244																							
+M100245																							
+M100246																							
+M100247																							
+M100248																							
+M100249																							
+M100250																							
+M100251																							
+M100252																							
+M100253																							
+M100254																							
+M100255																							
+M100256																							
+M100257																							
+M100258																							
+M100259																							
+M100260																							
+M100261																							
+M100262																							
+M100263																							
+M100264																							
+M100265																							
+M100266																							
+M100267																							
+M100268																							
+M100269																							
+M100270																							
+M100271																							
+M100272																							
+M100273																							
+M100274																							
+M100275																							
+M100276																							
+M100277																							

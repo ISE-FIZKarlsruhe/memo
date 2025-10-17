@@ -29,7 +29,14 @@ import_group:
     #  module_type_slme: SUBSET
     #  slme_individuals: exclude
 
-    
+components:
+  templates:
+      - filename: classes.tsv
+      - filename: entities.tsv
+  products:
+      - filename: classes.owl
+      - filename: entities.owl
+   
 
 release_artefacts:
   - base
