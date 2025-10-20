@@ -2,6 +2,9 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
     <uri name="https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/cto_import.owl" uri="imports/cto_import.owl" />
+    <uri name="https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl" uri="imports/rico_import.owl" />
+    <uri name="https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/components/classes.owl" uri="components/classes.owl" />
+    <uri name="https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/components/entities.owl" uri="components/entities.owl" />
   </group>
   <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public">
 

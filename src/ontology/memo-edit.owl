@@ -9,7 +9,10 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo-edit.owl>
+Import(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/components/classes.owl>)
+Import(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/components/entities.owl>)
 Import(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/cto_import.owl>)
+Import(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "NFDI4Memory Ontology")

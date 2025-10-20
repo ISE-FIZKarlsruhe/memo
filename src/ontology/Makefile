@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                6c54cd434ef533e1f36970baa3de6a967c6a1aa6e5bc3c9ff91704499e34b892
+CONFIG_HASH=                23c6f063afbd17db2a576de5908f5c77dfe36ce116ae3dc033eb38cf1c917aee
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 
+OTHER_SRC =                 $(COMPONENTSDIR)/classes.owl $(COMPONENTSDIR)/entities.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -188,7 +188,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  cto
+IMPORTS =  cto rico
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -423,6 +423,12 @@ $(IMPORTDIR)/cto_import.owl: $(MIRRORDIR)/cto.owl | all_robot_plugins
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
+## Module for ontology: rico (custom)
+$(IMPORTDIR)/rico_import.owl: $(MIRRORDIR)/rico.owl
+	@echo "ERROR: You have configured rico as a custom module;"
+	@echo "       This rule needs to be overwritten in memo.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -450,6 +456,46 @@ no-mirror-refresh-%:
 		IMP=true IMP_LARGE=true MIR=false PAT=false $(IMPORTDIR)/$*_import.owl
 
 # ----------------------------------------
+# Components
+# ----------------------------------------
+# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
+
+ifeq ($(COMP),true)
+.PHONY: all_components
+all_components: $(OTHER_SRC)
+
+.PHONY: recreate-components
+recreate-components:
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-classes.owl \
+		--assume-new=$(TMPDIR)/stamp-component-entities.owl \
+		COMP=true IMP=false MIR=true PAT=true all_components
+
+.PHONY: no-mirror-recreate-components
+no-mirror-recreate-components:
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-classes.owl \
+		--assume-new=$(TMPDIR)/stamp-component-entities.owl \
+		COMP=true IMP=false MIR=false PAT=true all_components
+
+.PHONY: recreate-%
+recreate-%:
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-$*.owl \
+		COMP=true IMP=false MIR=true PAT=true $(COMPONENTSDIR)/$*.owl
+
+.PHONY: no-mirror-recreate-%
+no-mirror-recreate-%:
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-$*.owl \
+		COMP=true IMP=false MIR=false PAT=true $(COMPONENTSDIR)/$*.owl
+
+$(COMPONENTSDIR)/%.owl: $(TMPDIR)/stamp-component-%.owl | $(COMPONENTSDIR)
+	test -f $@ || touch $@
+.PRECIOUS: $(COMPONENTSDIR)/%.owl
+
+$(TMPDIR)/stamp-component-%.owl: | $(TMPDIR)
+	touch $@
+.PRECIOUS: $(TMPDIR)/stamp-component-%.owl
+
+endif # COMP=true
+# ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
 
@@ -461,6 +507,13 @@ ifeq ($(MIR),true)
 .PRECIOUS: $(MIRRORDIR)/cto.owl
 mirror-cto: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdi4culture/refs/heads/main/cto.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: rico
+.PHONY: mirror-rico
+.PRECIOUS: $(MIRRORDIR)/rico.owl
+mirror-rico: | $(TMPDIR)
+	$(ROBOT) convert -I https://www.ica.org/standards/RiC/RiC-O_1-1.rdf -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

@@ -1,0 +1,87 @@
+Prefix(:=<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl>
+<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-20/imports/rico_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://www.ica.org/standards/RiC/ontology/1.1>)
+Annotation(owl:versionInfo "2025-10-20")
+
+Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Instantiation>))
+Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Record>))
+Declaration(Class(<https://www.ica.org/standards/RiC/ontology#RecordSet>))
+Declaration(ObjectProperty(<https://www.ica.org/standards/RiC/ontology#describesOrDescribed>))
+Declaration(ObjectProperty(<https://www.ica.org/standards/RiC/ontology#hasOrHadHolder>))
+Declaration(ObjectProperty(<https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation>))
+Declaration(DataProperty(<https://www.ica.org/standards/RiC/ontology#creationDate>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> (describes or described)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "describe o describía"@es)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "describes or described"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "décrit ou a décrit"@fr)
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> (has or had holder)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "est ou a été détenu par"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "has or had holder"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "tiene o tenía como conservador a"@es)
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> (has or had instantiation)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> "a ou a eu pour instanciation"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> "has or had instantiation"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> "tiene o tenía como instanciación"@es)
+ObjectPropertyRange(<https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> <https://www.ica.org/standards/RiC/ontology#Instantiation>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://www.ica.org/standards/RiC/ontology#creationDate> (creation date)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#creationDate> "creation date"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#creationDate> "date de création"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#creationDate> "fecha de creación"@es)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Instanciation)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instanciación"@es)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instanciation"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instantiation"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Repräsentation oder Instanz"@de)
+
+# Class: <https://www.ica.org/standards/RiC/ontology#Record> (Record)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Documento"@es)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Objet informationnel"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Record"@de)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Record"@en)
+
+# Class: <https://www.ica.org/standards/RiC/ontology#RecordSet> (Agrupación documental)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordSet> "Agrupación documental"@es)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordSet> "Ensemble d’objets informationnels"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordSet> "Record Set"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordSet> "Recordgruppe"@de)
+
+
+)

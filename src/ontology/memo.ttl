@@ -20,11 +20,11 @@
 @base <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo.ttl> .
 
 <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo.ttl> rdf:type owl:Ontology ;
-                                                           owl:versionIRI <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-05-06/memo.ttl> ;
+                                                           owl:versionIRI <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-20/memo.ttl> ;
                                                            dcterms:description "None" ;
                                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                                            dcterms:title "NFDI4Memory Ontology" ;
-                                                           owl:versionInfo "2025-05-06" .
+                                                           owl:versionInfo "2025-10-20" .
 
 #################################################################
 #    Annotation properties
@@ -1971,6 +1971,28 @@ Each media object linked via this property must be accompanied by a license stat
                              skos:example "license"@en .
 
 
+###  https://www.ica.org/standards/RiC/ontology#describesOrDescribed
+<https://www.ica.org/standards/RiC/ontology#describesOrDescribed> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:label "describe o describía"@es ,
+                                                                             "describes or described"@en ,
+                                                                             "décrit ou a décrit"@fr .
+
+
+###  https://www.ica.org/standards/RiC/ontology#hasOrHadHolder
+<https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "est ou a été détenu par"@fr ,
+                                                                       "has or had holder"@en ,
+                                                                       "tiene o tenía como conservador a"@es .
+
+
+###  https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation
+<https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:range <https://www.ica.org/standards/RiC/ontology#Instantiation> ;
+                                                                   rdfs:label "a ou a eu pour instanciation"@fr ,
+                                                                              "has or had instantiation"@en ,
+                                                                              "tiene o tenía como instanciación"@es .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -2204,6 +2226,13 @@ The preferred approach for legal statements is the usage of the object property 
                                                rdfs:subPropertyOf ontology:NFDI_0001008 ;
                                                rdfs:comment "Relates a cto:source item to the URL of a data source from which it originates"@en ;
                                                rdfs:label "has source file"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#creationDate
+<https://www.ica.org/standards/RiC/ontology#creationDate> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:label "creation date"@en ,
+                                                                     "date de création"@fr ,
+                                                                     "fecha de creación"@es .
 
 
 #################################################################
@@ -4471,7 +4500,8 @@ ontology:NFDI_0000193 rdf:type owl:Class ;
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000198
 ontology:NFDI_0000198 rdf:type owl:Class ;
-                      rdfs:subClassOf [ owl:intersectionOf ( obo:IAO_0000104
+                      rdfs:subClassOf obo:IAO_0000104 ,
+                                      [ owl:intersectionOf ( obo:IAO_0000104
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty [ owl:inverseOf ontology:NFDI_0000153
                                                                               ] ;
@@ -4479,6 +4509,11 @@ ontology:NFDI_0000198 rdf:type owl:Class ;
                                                              ]
                                                            ) ;
                                         rdf:type owl:Class
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf ontology:NFDI_0000153
+                                                       ] ;
+                                        owl:someValuesFrom ontology:NFDI_0000224
                                       ] ;
                       rdfs:comment "A plan specification that comprises a set of instructions, programs, or algorithms designed to perform specific tasks or functions on a computer or other electronic devices."@en ;
                       rdfs:label "software"@en ;
@@ -4488,7 +4523,8 @@ ontology:NFDI_0000198 rdf:type owl:Class ;
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203
 ontology:NFDI_0000203 rdf:type owl:Class ;
-                      rdfs:subClassOf [ owl:intersectionOf ( obo:IAO_0000033
+                      rdfs:subClassOf obo:IAO_0000033 ,
+                                      [ owl:intersectionOf ( obo:IAO_0000033
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty [ owl:inverseOf ontology:NFDI_0000153
                                                                               ] ;
@@ -4496,6 +4532,11 @@ ontology:NFDI_0000203 rdf:type owl:Class ;
                                                              ]
                                                            ) ;
                                         rdf:type owl:Class
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf ontology:NFDI_0000153
+                                                       ] ;
+                                        owl:someValuesFrom ontology:NFDI_0000224
                                       ] ;
                       rdfs:comment "A directive information entity that defines the requirements, characteristics, or standards for the design, implementation, or operation of a system, product, or process.Specification is a set of requirements, guidelines, standards contributed by an organization or a person."@en ;
                       rdfs:label "specification"@en ;
@@ -4565,7 +4606,8 @@ ontology:NFDI_0000222 rdf:type owl:Class ;
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000223
 ontology:NFDI_0000223 rdf:type owl:Class ;
-                      rdfs:subClassOf [ owl:intersectionOf ( obo:IAO_0000030
+                      rdfs:subClassOf obo:IAO_0000030 ,
+                                      [ owl:intersectionOf ( obo:IAO_0000030
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty [ owl:inverseOf ontology:NFDI_0000153
                                                                               ] ;
@@ -4573,6 +4615,11 @@ ontology:NFDI_0000223 rdf:type owl:Class ;
                                                              ]
                                                            ) ;
                                         rdf:type owl:Class
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf ontology:NFDI_0000153
+                                                       ] ;
+                                        owl:someValuesFrom ontology:NFDI_0000224
                                       ] ;
                       rdfs:comment "An information content entity that represents a collection of interconnected web pages, multimedia content, and digital resources accessible via the World Wide Web."@en ;
                       rdfs:label "website"@en ;
@@ -4666,7 +4713,8 @@ ontology:NFDI_0000231 rdf:type owl:Class ;
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000232
 ontology:NFDI_0000232 rdf:type owl:Class ;
-                      rdfs:subClassOf ontology:NFDI_0000001 ,
+                      rdfs:subClassOf obo:BFO_0000141 ,
+                                      ontology:NFDI_0000001 ,
                                       [ owl:intersectionOf ( obo:BFO_0000141
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty [ owl:inverseOf ontology:NFDI_0000152
@@ -4675,6 +4723,11 @@ ontology:NFDI_0000232 rdf:type owl:Class ;
                                                              ]
                                                            ) ;
                                         rdf:type owl:Class
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf ontology:NFDI_0000152
+                                                       ] ;
+                                        owl:someValuesFrom ontology:NFDI_0000101
                                       ] ;
                       rdfs:comment "An immaterial entity that provides value through a service offering, delivering intangible benefits or functionality designed to fulfill specific needs or requirements, often in a structured process."@en ;
                       rdfs:label "service product"@en .
@@ -5068,8 +5121,7 @@ ontology:NFDI_0001050 rdf:type owl:Class ;
                                                                ) ;
                                             rdf:type owl:Class
                                           ] ;
-                      rdfs:subClassOf obo:IAO_0000030 ,
-                                      ontology:NFDI_0000203 ,
+                      rdfs:subClassOf ontology:NFDI_0000203 ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty obo:IAO_0000219 ;
                                         owl:someValuesFrom ontology:NFDI_0000131
@@ -5714,6 +5766,30 @@ as Q1133779 (renaissance art). Don't use this class to identify the painting wit
                                   rdfs:isDefinedBy <https://schema.org/TheaterEvent> ;
                                   rdfs:label "TheaterEvent"@en ;
                                   skos:example "<https://slod.fiz-karlsruhe.de/labw-2-2599390.html> is a theater event, which took place on March 11, 1923."@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Instantiation
+<https://www.ica.org/standards/RiC/ontology#Instantiation> rdf:type owl:Class ;
+                                                           rdfs:label "Instanciación"@es ,
+                                                                      "Instanciation"@fr ,
+                                                                      "Instantiation"@en ,
+                                                                      "Repräsentation oder Instanz"@de .
+
+
+###  https://www.ica.org/standards/RiC/ontology#Record
+<https://www.ica.org/standards/RiC/ontology#Record> rdf:type owl:Class ;
+                                                    rdfs:label "Documento"@es ,
+                                                               "Objet informationnel"@fr ,
+                                                               "Record"@de ,
+                                                               "Record"@en .
+
+
+###  https://www.ica.org/standards/RiC/ontology#RecordSet
+<https://www.ica.org/standards/RiC/ontology#RecordSet> rdf:type owl:Class ;
+                                                       rdfs:label "Agrupación documental"@es ,
+                                                                  "Ensemble d’objets informationnels"@fr ,
+                                                                  "Record Set"@en ,
+                                                                  "Recordgruppe"@de .
 
 
 #################################################################
