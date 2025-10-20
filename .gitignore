@@ -4,7 +4,6 @@
 .DS_Store
 semantic.cache
 bin/
-.idea/
 
 *.tmp
 *.tmp.obo
