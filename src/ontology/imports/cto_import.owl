@@ -23,9 +23,9 @@ Prefix(edamontology:=<http://edamontology.org/>)
 
 
 Ontology(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/cto_import.owl>
-<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-20/imports/cto_import.owl>
+<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-21/imports/cto_import.owl>
 Annotation(dc:source <https://nfdi4culture.de/ontology/3.0.0>)
-Annotation(owl:versionInfo "2025-10-20")
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(edamontology:format_2197))
 Declaration(Class(edamontology:format_2376))

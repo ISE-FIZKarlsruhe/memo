@@ -36,7 +36,7 @@ Datatype: idrange:1
         allocatedto: "Sarah Rebecca Ondraszek"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
+        xsd:integer[>= 1000 , <= 9999]
 
     
 Datatype: idrange:2
@@ -45,7 +45,7 @@ Datatype: idrange:2
         allocatedto: "Tabea Tietz"
     
     EquivalentTo: 
-        xsd:integer[>= 1000000 , <= 1999999]
+        xsd:integer[>= 10000 , <= 19000]
     
     
 Datatype: xsd:integer

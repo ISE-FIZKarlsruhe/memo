@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl>
-<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-20/imports/rico_import.owl>
+<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-21/imports/rico_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://www.ica.org/standards/RiC/ontology/1.1>)
-Annotation(owl:versionInfo "2025-10-20")
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Instantiation>))
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Record>))
@@ -21,6 +21,7 @@ Declaration(DataProperty(<https://www.ica.org/standards/RiC/ontology#creationDat
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
 
 ############################
 #   Object Properties
@@ -32,7 +33,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#descr
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "describes or described"@en)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "décrit ou a décrit"@fr)
 
-# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> (has or had holder)
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> (est ou a été détenu par)
 
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "est ou a été détenu par"@fr)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "has or had holder"@en)

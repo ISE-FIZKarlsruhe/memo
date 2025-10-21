@@ -17,6 +17,10 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "NFDI4Memory Ontology")
 
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003>))
+Declaration(DataProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -36,6 +40,47 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> (has related project)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> "Relates a source item (e.g., document or dataset) to a research project it is associated with."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> "has related project"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> ":dataset of archival documents memo:related project :ehri ."@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> <https://nfdi4culture.de/ontology/CTO_0001008>)
+InverseObjectProperties(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003>)
+ObjectPropertyRange(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000002>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003> (is related project of)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003> "Relates a resource (e.g., document or dataset) to a research project it is associated with."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003> "is related project of"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003> <https://nfdi4culture.de/ontology/CTO_0001014>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> (has coverage period)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> "Specifies the temporal period covered by a resource."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> "has coverage period"@en)
+SubDataPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> <https://nfdi4culture.de/ontology/CTO_0001070>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> (provided content type)
+
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> "provided content type"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 
 )
