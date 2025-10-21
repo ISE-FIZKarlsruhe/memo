@@ -7,6 +7,7 @@ plugins:
   - search
   #- table-reader (see https://github.com/INCATools/ontology-development-kit/issues/1028)
 markdown_extensions:
+  - shmarql
   - pymdownx.highlight:
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -17,11 +18,13 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-
+extra_javascript:
+  - javascripts/extra.js
 site_url: https://ISE-FIZKarlsruhe.github.io/memo/
 repo_url: https://github.com/ISE-FIZKarlsruhe/memo/
 
 nav:
+  - MEMO: ontology/ 
   - Getting started: index.md
   - Cite: cite.md
   - How-to guides:
