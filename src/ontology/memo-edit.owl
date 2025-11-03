@@ -20,6 +20,16 @@ Annotation(dcterms:title "NFDI4Memory Ontology")
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001>))
 Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010000>))
 Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010005>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010007>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010009>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010012>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013>))
+Declaration(ObjectProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010014>))
 Declaration(DataProperty(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -60,6 +70,76 @@ AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003> "is related project of"@en)
 SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003> <https://nfdi4culture.de/ontology/CTO_0001014>)
 
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> (was quoted from)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> "Indicates that a claim is a literal quotation from another source item in the MemO knowledge graph."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> "was quoted from"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010005>)
+ObjectPropertyDomain(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010004> <https://nfdi4culture.de/ontology/CTO_0001005>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010005> (is source of quote)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010005> "Indicates that a claim is a literal quotation from another source item in the MemO knowledge graph."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010005> "is source of quote"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010005> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> (has source provenance)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> "Provides provenance for a piece of information by pointing to the source that supports it."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> "has source provenance"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010007>)
+ObjectPropertyDomain(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> <http://purl.obolibrary.org/obo/IAO_0000030>)
+ObjectPropertyRange(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010006> <https://nfdi4culture.de/ontology/CTO_0001005>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010007> (is source provenance of)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010007> "Provides provenance for a piece of information by pointing to the source that supports it."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010007> "is source provenance of"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010007> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008> (has metadata url)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008> "Points a source item to the metadata record URL."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008> "has metadata url"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008> <http://www.w3.org/ns/dcat#downloadURL>)
+InverseObjectProperties(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010009>)
+ObjectPropertyDomain(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010008> <https://nfdi4culture.de/ontology/CTO_0001005>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010009> (is metadata url of)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010009> "Points a source item to the metadata record URL."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010009> "is metadata url of"@en)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011> (has data provider)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011> "Relates a source item to an organization that is providing the ingested data. In NFDI4Memory, this could be an archival institution providing the data, in comparison to the organization publishing said data (for example, a data aggregator like the German Digital Library)."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011> "has data provider"@en)
+InverseObjectProperties(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010012>)
+ObjectPropertyDomain(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011> <https://nfdi4culture.de/ontology/CTO_0001005>)
+ObjectPropertyRange(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010011> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000003>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010012> (is data provider of)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010012> "Relates a source item to an organization that is providing the ingested data. In NFDI4Memory, this could be an archival institution providing the data, in comparison to the organization publishing said data (for example, a data aggregator like the German Digital Library)."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010012> "is data provider of"@en)
+SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010012> owl:topObjectProperty)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013> (provides content type)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013> "Specifies the type of the objects provided by the NFDI4Memory resource, data portal, or service."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013> "provides content type"@en)
+InverseObjectProperties(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010014>)
+ObjectPropertyDomain(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013> ObjectUnionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000001> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000123>))
+ObjectPropertyRange(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010013> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001>)
+
+# Object Property: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010014> (is provided content type of)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010014> "Specifies the type of the objects provided by the NFDI4Memory resource, data portal, or service."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010014> "is provided content type of"@en)
+
 
 ############################
 #   Data Properties
@@ -69,7 +149,6 @@ SubObjectPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010003
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> "Specifies the temporal period covered by a resource."@en)
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> "has coverage period"@en)
-SubDataPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> <https://nfdi4culture.de/ontology/CTO_0001070>)
 
 
 
@@ -79,7 +158,9 @@ SubDataPropertyOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010002> 
 
 # Class: <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> (provided content type)
 
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> "The content type an NFDI resource provides."@en)
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> "provided content type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> "3D object"@en)
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
 

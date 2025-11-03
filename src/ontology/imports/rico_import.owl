@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl>
-<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-10-21/imports/rico_import.owl>
+<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-11-03/imports/rico_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://www.ica.org/standards/RiC/ontology/1.1>)
-Annotation(owl:versionInfo "2025-10-21")
+Annotation(owl:versionInfo "2025-11-03")
 
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Instantiation>))
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Record>))
@@ -33,7 +33,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#descr
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "describes or described"@en)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#describesOrDescribed> "décrit ou a décrit"@fr)
 
-# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> (est ou a été détenu par)
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> (has or had holder)
 
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "est ou a été détenu par"@fr)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "has or had holder"@en)
@@ -63,7 +63,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#creat
 #   Classes
 ############################
 
-# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Instanciation)
+# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Repräsentation oder Instanz)
 
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instanciación"@es)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instanciation"@fr)
