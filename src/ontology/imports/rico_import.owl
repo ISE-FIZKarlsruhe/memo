@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/imports/rico_import.owl>
-<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-11-03/imports/rico_import.owl>
+<https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-11-04/imports/rico_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://www.ica.org/standards/RiC/ontology/1.1>)
-Annotation(owl:versionInfo "2025-11-03")
+Annotation(owl:versionInfo "2025-11-04")
 
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Instantiation>))
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Record>))
@@ -39,7 +39,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOr
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "has or had holder"@en)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadHolder> "tiene o tenía como conservador a"@es)
 
-# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> (has or had instantiation)
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> (tiene o tenía como instanciación)
 
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> "a ou a eu pour instanciation"@fr)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadInstantiation> "has or had instantiation"@en)
@@ -63,7 +63,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#creat
 #   Classes
 ############################
 
-# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Repräsentation oder Instanz)
+# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Instanciation)
 
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instanciación"@es)
 AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instanciation"@fr)

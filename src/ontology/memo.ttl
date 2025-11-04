@@ -20,11 +20,11 @@
 @base <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo.ttl> .
 
 <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo.ttl> rdf:type owl:Ontology ;
-                                                           owl:versionIRI <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-11-03/memo.ttl> ;
+                                                           owl:versionIRI <https://nfdi.fiz-karlsruhe.de/4memory/ontology/memo/releases/2025-11-04/memo.ttl> ;
                                                            dcterms:description "None" ;
                                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                                            dcterms:title "NFDI4Memory Ontology" ;
-                                                           owl:versionInfo "2025-11-03" .
+                                                           owl:versionInfo "2025-11-04" .
 
 #################################################################
 #    Annotation properties
@@ -5885,6 +5885,7 @@ as Q1133779 (renaissance art). Don't use this class to identify the painting wit
 
 ###  https://www.ica.org/standards/RiC/ontology#Instantiation
 <https://www.ica.org/standards/RiC/ontology#Instantiation> rdf:type owl:Class ;
+                                                           rdfs:subClassOf obo:BFO_0000040 ;
                                                            rdfs:label "Instanciación"@es ,
                                                                       "Instanciation"@fr ,
                                                                       "Instantiation"@en ,
@@ -5893,6 +5894,7 @@ as Q1133779 (renaissance art). Don't use this class to identify the painting wit
 
 ###  https://www.ica.org/standards/RiC/ontology#Record
 <https://www.ica.org/standards/RiC/ontology#Record> rdf:type owl:Class ;
+                                                    rdfs:subClassOf obo:IAO_0000030 ;
                                                     rdfs:label "Documento"@es ,
                                                                "Objet informationnel"@fr ,
                                                                "Record"@de ,
@@ -5901,6 +5903,7 @@ as Q1133779 (renaissance art). Don't use this class to identify the painting wit
 
 ###  https://www.ica.org/standards/RiC/ontology#RecordSet
 <https://www.ica.org/standards/RiC/ontology#RecordSet> rdf:type owl:Class ;
+                                                       rdfs:subClassOf obo:IAO_0000030 ;
                                                        rdfs:label "Agrupación documental"@es ,
                                                                   "Ensemble d’objets informationnels"@fr ,
                                                                   "Record Set"@en ,

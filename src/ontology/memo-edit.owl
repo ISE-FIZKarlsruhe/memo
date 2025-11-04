@@ -163,5 +163,20 @@ AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/4memory/ontology/M
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> "3D object"@en)
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/4memory/ontology/MEMO_0010001> <http://purl.obolibrary.org/obo/IAO_0000033>)
 
+# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Instantiation)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Instantiation> "Instantiation"@en)
+SubClassOf(<https://www.ica.org/standards/RiC/ontology#Instantiation> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <https://www.ica.org/standards/RiC/ontology#Record> (Record)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Record"@en)
+SubClassOf(<https://www.ica.org/standards/RiC/ontology#Record> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <https://www.ica.org/standards/RiC/ontology#RecordSet> (Record Set)
+
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordSet> "Record Set"@en)
+SubClassOf(<https://www.ica.org/standards/RiC/ontology#RecordSet> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
 
 )
